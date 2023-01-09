@@ -1,2 +1,1 @@
-import the_garden
-the_garden.run()
+print ('Runnning main for pypi_builder')
