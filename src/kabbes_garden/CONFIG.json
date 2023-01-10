@@ -1,0 +1,22 @@
+{
+    "packages.!Path":{
+        "$ref": "{{_Dir}}",
+        "method":{
+            "name": "join_Path",
+            "kwargs":{
+                "path": "packages.txt"
+            }
+        }
+    },
+    "pythonpath_key": "PYTHONPATH",
+    "override": false,
+    "repos.!Path":{
+        "$ref": "{{_Dir}}",
+        "method":{
+            "name": "join_Path",
+            "kwargs":{
+                "path": "repos.txt"
+            }
+        }
+    }
+}
