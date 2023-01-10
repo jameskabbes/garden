@@ -50,7 +50,9 @@ class Garden( ParentClass ):
         if not override:
             return
 
-        if platform.system() == 'Darwin' or platform.system() == 'Linux':
+        ### Still have work to do
+
+        if platform.system() == 'Darwin':
             string = 'export ' + self.cfg['pythonpath_key'] + '=' + joined_pythonpath
             self.cfg['user_profile.environment.Path'].write( string = string, overwrite=True )
 
