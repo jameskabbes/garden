@@ -1,6 +1,6 @@
 {
     "packages.!Path":{
-        "$ref": "{{_Dir}}",
+        "$ref": "{R{_Dir}R}",
         "method":{
             "name": "join_Path",
             "kwargs":{
@@ -11,12 +11,13 @@
     "pythonpath_key": "PYTHONPATH",
     "override": false,
     "repos.!Path":{
-        "$ref": "{{_Dir}}",
+        "$ref": "{R{_Dir}R}",
         "method":{
             "name": "join_Path",
             "kwargs":{
                 "path": "repos.txt"
             }
         }
-    }
+    },
+    "src_name":"{{pypi_builder.src_name}}"
 }

@@ -7,6 +7,7 @@ class Garden( ParentClass ):
 
     def __init__( self ):
         ParentClass.__init__( self )
+        
         self.get_repo_Dirs()
         self.get_src_Dirs()
         self.get_package_Dirs()
@@ -14,7 +15,7 @@ class Garden( ParentClass ):
         self.write_repos()
 
     def get_repo_Dirs( self ):
-        self.repo_Dirs = self.cfg[ 'user_profile.packages.Dir' ].list_contents_Paths( block_dirs = False, block_paths =True )
+        self.repo_Dirs = self.cfg.parent[ 'user_profile.profile.packages.Dir' ].list_contents_Paths(block_dirs=False,block_paths=True)
 
     def get_src_Dirs( self ):
         self.src_Dirs = do.Dirs()
@@ -35,6 +36,9 @@ class Garden( ParentClass ):
 
     def write_repos( self ):
         string = '\n'.join( [ Dir.dirs[-1] for Dir in self.repo_Dirs ] )
+        
+        self.cfg['repos.Path'].print_atts()
+
         self.cfg['repos.Path'].write( string=string, overwrite=True)
 
     def export_pythonpath( self, override:bool=False ):
@@ -50,11 +54,9 @@ class Garden( ParentClass ):
         if not override:
             return
 
-        ### Still have work to do
-
         if platform.system() == 'Darwin':
             string = 'export ' + self.cfg['pythonpath_key'] + '=' + joined_pythonpath
-            self.cfg['user_profile.environment.Path'].write( string = string, overwrite=True )
+            self.cfg.parent['user_profile.profile.environment.Path'].write( string = string, overwrite=True )
 
         else:
             print ('No instructions for exporting PYTHONPATH yet')
