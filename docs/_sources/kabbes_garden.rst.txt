@@ -1,0 +1,29 @@
+kabbes\_garden package
+======================
+
+Submodules
+----------
+
+kabbes\_garden.Client module
+----------------------------
+
+.. automodule:: kabbes_garden.Client
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+kabbes\_garden.Garden module
+----------------------------
+
+.. automodule:: kabbes_garden.Garden
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: kabbes_garden
+   :members:
+   :undoc-members:
+   :show-inheritance:
