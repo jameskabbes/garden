@@ -1,5 +1,6 @@
 asteroids
 analytics_packages
+google_forms
 repository_generator
 account_manager
 dropbox_connection
@@ -17,7 +18,6 @@ aws_connections
 quick_pics
 dir_ops
 s3synchrony
-user_client
 database_connections
 password_creator
 raspberry_pi_website
@@ -29,7 +29,9 @@ imessage
 smart_documentation
 icloud
 web_traffic_monitor
+qr_code
 client
 spotify_analysis
 gmail
+dns_hosts
 user_profile
