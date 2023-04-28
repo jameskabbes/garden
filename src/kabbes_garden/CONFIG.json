@@ -19,5 +19,5 @@
             }
         }
     },
-    "src_name":"{{pypi_builder.src_name}}"
+    "src_name":"{{kabbes_pypi_builder.src_name}}"
 }

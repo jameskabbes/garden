@@ -4,6 +4,7 @@ google_forms
 repository_generator
 account_manager
 dropbox_connection
+matchup_scheduler
 aws_credentials
 py_starter
 ml_pipeline
