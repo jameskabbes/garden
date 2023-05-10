@@ -12,6 +12,7 @@ nanoid
 config
 cryptography
 garden
+google
 pypi_builder
 pygame_pack
 repository_manager
